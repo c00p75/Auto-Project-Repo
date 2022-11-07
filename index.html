@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Noto Serif|Poppins|Anton">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <title>Clesha Auto Spares</title>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="logo">
+        <p class="bigger_font">CLESHA</p>
+        <p class="smaller_font">Auto Spares</p>
+      </div>
+      
+    <div class="w3-dropdown-click btn">
+      <button onclick="myFunction(); myFunction2(this)" class="w3-button w3-black material-symbols-outlined" id="btn">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </button>
+      <div id="Demo" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom dropdown" style="right:0">
+        <a href="#" class="w3-bar-item w3-button">About Us</a>
+        <a href="#" class="w3-bar-item w3-button">Specials</a>
+        <a href="#" class="w3-bar-item w3-button">Get in touch</a>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("Demo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+
+  function myFunction2(x) {
+  x.classList.toggle("change");
+}
+  </script>
+    </nav>  
+  </header>
+  <main>    
+      <div class="intro">        
+        <h1>Dealers in FORD, TOYOTA, NISSAN, MAZDA AND ISUZU Automotive Spare Parts and Accessories</h1>        
+      </div>
+      <div class="inventory">
+        <p class="main_text">Visit Clesha Auto Spares for quality spare parts. We have a large selection of brands aquired from the best vendors in the world. Our inventory focuses on both early and late models. Come and see what we have in stock!</p>
+        
+        <div class="product_slideshow">
+          <div class="w3-content w3-section" style="max-width:500px">
+            <img class="mySlides w3-animate-left product" src="Images/sp1.jpg">
+            <img class="mySlides w3-animate-left product" src="Images/sp2.jpg">
+            <img class="mySlides w3-animate-left product" src="Images/sp3.jpg">
+            <img class="mySlides w3-animate-bottom product" src="Images/sp4.jpg">
+            <img class="mySlides w3-animate-top product" src="Images/sp5.jpg">
+            <img class="mySlides w3-animate-bottom product" src="Images/sp6.jpg">
+            <img class="mySlides w3-animate-top product" src="Images/sp7.jpg">
+            <img class="mySlides w3-animate-bottom product" src="Images/sp8.jpg">
+            <img class="mySlides w3-animate-top product" src="Images/sp9.jpg">
+            <img class="mySlides w3-animate-left product" src="Images/sp10.jpg">
+            <img class="mySlides w3-animate-left product" src="Images/sp11.jpg">
+            <img class="mySlides w3-animate-left product" src="Images/sp12.jpg">
+            <img class="mySlides w3-animate-top product" src="Images/sp13.jpg">
+            <img class="mySlides w3-animate-bottom product" src="Images/sp14.jpg">
+            <img class="mySlides w3-animate-top product" src="Images/sp15.jpg">
+            
+          </div>
+        </div>
+        
+        <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 4500);    
+        }
+        </script>
+        
+        <h2 class="quote_request">Request Quotation</h2>
+        
+        <div class="inventory_form">
+          <form id="request" autocomplete="on">						          
+            <input type="text" id="make" name="make" placeholder="Make"><br>						
+            <input type="email" id="model" name="model" placeholder="Model"><br> 
+            <input type="email" id="vin" name="vin" placeholder="VIN/Chasis Number"><br>
+            <textarea name="desc" id="desc" rows="3"  placeholder="Parts Description"></textarea><br>
+            <span id="form_span">Upload image</span>
+            <input type="file">
+            <input type="file" id="file">
+            <input type="text" id="name" name="name" placeholder="Name"><br>			
+            <input type="text" id="phone" name="phone" placeholder="Phone Number"><br>						
+            <input type="email" id="email" name="email" placeholder="Email"><br>
+            <input type="submit" id="form_submit" value="Send">				
+        </form>
+        </div>       
+      </div>
+  </main>
+  <div class="socials">
+    <ul>
+      <li><a href="#"><img src="images/facebook.png" alt="Facebook icon"></a></li>
+      <li><a href="#"><img src="Images/whatsapp.png" alt="Whatsapp icon"></a></li>
+      <li><a href="#"><img src="Images/instagram.png" alt="instagram-log0"></a></li>
+    </ul>
+  </div>
+  <footer>
+    <ul>      
+      <li class="footer_link"><a href="#" data-replace="ABOUT US" class> <span>ABOUT US</span></a></li>      
+      <li class="footer_link"><a href="#" data-replace="MONTHLY SPECIALS"><span>MONTHLY SPECIALS</span></a></li>
+      <li class="footer_link"><a href="#" data-replace="LATEST DEALS"><span>LATEST DEALS</span></a></li>
+      <li class="footer_link"><a href="#" data-replace="RETURN & REFUND POLICY"><span>RETURN & REFUND POLICY</span></a></li>      
+      <li><iframe width=100% id="gmap_canvas" src="https://maps.google.com/maps?q=lusaka%20town&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></li>      
+      <li id="copyright">Copyright © 2022 Clesha Auto Spares - All Rights Reserved.</li>
+    </ul>        
+  </footer>
+</body>
+</html>
